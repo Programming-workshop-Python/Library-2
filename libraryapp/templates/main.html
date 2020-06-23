@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+<h2><p style="margin-left: 50px;">Поиск по библиотеке<br><br>Что ищете&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Категория (author, book_name, publishing_house, year, annotation, rubricator)</h2>
+<form method="post" action="/add_message">
+    <input type="text" name="text" placeholder="Что ищем?">
+    <input type="text" name="tag" placeholder="Где ищем?">
+    <button type="submit">Начать поиск</button>
+</form>
+<a href="{{ url_for('posts_controller.source') }}">Назад</a>
+</body>
+</html>

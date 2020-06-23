@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Poisk knigi</title>
+</head>
+<body>
+<h1> ПОИСК И ИЗМЕНЕНИЕ КНИГИ </h1>
+<h2><p style="margin-left: 50px;">Поиск по библиотеке<br><br>Что ищете&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Категория (author, book_name, publishing_house, year, annotation, rubricator)&nbsp; ПОИСК:Столбец &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Значение</h2>
+<form method="post" action="/сhange_book2">
+    <input type="text" name="author" placeholder="Автор">
+    <input type="text" name="book_name" placeholder="Название книги">
+    <input type="text" name="publishing_house" placeholder="Издатель">
+    <input type="text" name="year" placeholder="Год издания(число)">
+    <input type="text" name="annotation" placeholder="Аннотация">
+    <input type="text" name="rubricator" placeholder="Рубрикатор">
+    <input type="text" name="gde2" placeholder="Столбец для поиска">
+    <input type="text" name="chto2" placeholder="Что ищем">
+    <button type="submit">Изменить книгу</button>
+</form>
+<a href="{{ url_for('posts_controller.source') }}">Назад</a>
+</body>
+</html>

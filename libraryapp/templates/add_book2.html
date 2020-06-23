@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add_book2</title>
+</head>
+<body>
+<h1> Добавление книги </h1>
+
+<form method="post" action="/add_book123">
+    <input type="text" name="author" placeholder="Автор">
+    <input type="text" name="book_name" placeholder="Название книги">
+    <input type="text" name="publishing_house" placeholder="Издатель">
+    <input type="text" name="year" placeholder="Год издания(число)">
+    <input type="text" name="annotation" placeholder="Аннотация">
+    <input type="text" name="rubricator" placeholder="Рубрикатор">
+    <button type="submit">Добавить книгу</button>
+</form>
+<a href="{{ url_for('posts_controller.source') }}">Назад</a>
+</body>
+</html>
