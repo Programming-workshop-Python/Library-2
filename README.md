@@ -1,9 +1,8 @@
 # Library-2
 
-pip install flask
 
 pip install flask
-
+-
 pip install psycopg2
 -------------------------------------------------------------------
 БД использует PostgreSQL
